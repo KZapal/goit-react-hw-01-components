@@ -1,7 +1,9 @@
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
+import FriendList from './FriendList/FriendList';
 import user from 'folder/user.json';
 import data from 'folder/data.json';
+import friends from 'folder/friends.json';
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
         likes={user.stats.likes}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </>
   );
 };
