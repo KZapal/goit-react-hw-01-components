@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.item:hover,
+.item:focus {
+  background-color: slategray;
+}
+
 .statusOnline {
   width: 25px;
   height: 25px;
