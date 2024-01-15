@@ -1,8 +1,8 @@
 import css from './FriendListItem.module.css';
 
-const FriendListItem = ({ isOnline, avatar, name }) => {
+const FriendListItem = ({ id, isOnline, avatar, name }) => {
   return (
-    <li className={css.item}>
+    <li key={id} className={css.item}>
       <span className={isOnline ? css.statusOnline : css.statusOffline}></span>
       <img
         className={css.avatar}
